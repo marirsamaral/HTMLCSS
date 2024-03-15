@@ -1,0 +1,5 @@
+<br> pode ser simplifico colocando somente o br depois apertando no enter para que o visual monte a tag. Esse tag serve para que seja possivel que um titulo seja quebrado no meio da frase. Se não for utilizar essa tag, o visual entende que o paragrafo será continuo
+
+<!--comentario--> para fazer uma comentario no codigo, utilize esta tag 
+
+&lt;p&gt; isso serve para quando vc quiser que o apareça a tag na frase que o cliente vai visualizar. Usando o exemplo do começo do frase, na tela do cliente vai aparecer assim <p>

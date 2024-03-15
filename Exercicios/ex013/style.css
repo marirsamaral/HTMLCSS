@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif; /*Fonte da letra;*/
+}
+
+body {
+    background-image: linear-gradient(to right, #F1D8C9, #F2C3A7);
+}
+
+main { /* como o nosso texto esta dentro de uma tag main, precisamos fazer uma configuração de cores somente para ela.  ;*/
+    background-color: white;
+    width: 600px; /*Largura ;*/
+    border-radius: 10px;  /*arredondar as bordas ;*/
+    box-shadow: 5px 5px 15px #ad4f2c; /* Sombrear as bordas ;*/
+    padding: 10px; /* acochoamento;*/
+    margin: auto; /* centralizar o texto ;*/
+    font-weight: normal; /* peso da fonte. Ex: Normal , lighter (+ leve), bold (+ escura), bolder(+ negrito). Na fonte Arial não faz tanta diferença*/
+    font-style: italic;
+    text-decoration: underline;
+
+    /* é possivel fazer uma shorthand font. Que vai juntar todas as configurações em somente uma linha. A ordem deve ser: font-syte -> font-weight -> fonte-size -> font-family*/
+    font: italic bolder 3em Arial, Helvetica 
+}
+h1 {
+    color:#ffa500 ;
+    text-align: center; /* Titulo centralizado;*/
+    text-shadow: 1px 1px 2px #ad4f2c; /* Sombrear o titulo;*/
+}
+
+h2 {
+    color: #ad4f2c;
+}
+
+p {
+    text-align: justify; /*texto justificado;*/
+}

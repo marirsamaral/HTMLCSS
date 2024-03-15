@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="iconehtml.ico" type="image/x-icon">
+    <title>Formatação de Textos</title>
+    <style>
+        body {
+            background-color: brown;
+        }
+    </style>  <!--Mudar a cor da tela do site-->
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando o tag b (não semantica)</p>
+    <p>Tambem é possivel utilizar o <strong>termo em negrito</strong> strong (semantica)</p>
+    <h2>Italico / Ênsafase </h2>
+    <p>Nesta frase temos um <i>termo em italico</i> usando o tag i (não semantica)</p> <!--Um atalho bom para mudar a forma de um texto, sublinhe um texto desejado -> CTLR + SHIFT + P vai aparecer uma telinha com as informações, pesquise por abb e clique em Envelope com a abertura-->
+    <p>Nesta frase temos um <em>termo em ênfase</em> usando a tag EM (semantica)</p> 
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar tambem um <mark style="background-color: green;">texto marcado usando</mark> a tag MANK</p> <!--Mark seria uma tag para marcar um texto depois colocamos um style usando o CSS para mudar a cor da marcação -->
+    <p>E no outro paragrafo temos <mark>um outro texto marcado</mark> </p> <!--se quiser tem todas os "marks" seja de uma determinada cor, precisa fazer um style no começo do codigo. 
+    Exemplo: 
+    <style>
+        mark{
+            background-color: red
+        }
+    </sytle>-->
+    <h2> Texto Grande e pequeno</h2>
+    <p>Estamos criando <big>um texto grande</big> e <small>um texto pequeno</small> nesse paragrafo</p> <!--big esta em vermelho pois ele esta obsoleta-->
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluido</del>, para indicar que ele pode ser lido mas não considerado. </p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ensafe  e indicar que ele foi adicionado depois (semantica)</p>
+    <p>Existe tambem o <u>sublinhado</u> com tag U (não semantica)</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisa do tipo x<sup>20</sup>/3</p> <!--para deixar um numero ou letra elevado-->>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisa do tipo H<sub>2</sub>0</p> <!--para deixar um numero ou letra para baixo-->>
+</body>
+</html>

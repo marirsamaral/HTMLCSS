@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML</title>
+    <h1>Inserindo videos hospedados localmente </h1>
+    <p>Este video esta hospedado no meu proprio servidor </p>
+    <video src="midia/meu-video.mp4" width=500 controls  ></video>
+    <!--o width 500 foi utilizado para reduzir a imagem e o controls para que o video pudesse ser reproduzido-->
+
+
+
+    <!--O formato a baixo é o mais ideal para que seja reproduzido em todos os dispositivos-->
+    <video controls width="500" poster="midia/limoes-capa.png"> <!--porter é utilizado para que uma imagem seja a capa do seu video-->
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/m4v">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogv">
+        <!--são varios formatos de videos diferente...lembrando que deve ser colocada do menor para o maior. Esse formato consome muito dados do servidor-->
+        <p>Seu navegador não tem compatibilidade com reprodução de videos</p>
+    </video>
+
+    <h1>Inserindo videos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fdSLggwTEMI?si=2WPf21dysMCmOsFp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!--a icorporação do video do youtube é o que esta entre as tags iframe-->
+</head>
+<body>
+    
+</body>
+</html>

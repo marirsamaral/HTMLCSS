@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+aside {
+    padding: 10px;
+    background-color: #F9943B;
+    border-radius: 10px;
+    height: 300px;
+    width: 700px;
+    margin: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.562); /*sombra somente em cima na direta, em baixo na direita e em baixo na esqueda */
+}
+
+aside > h1 {
+    background-color: #69370b8a;
+    margin: -10px -10px 0 -10px; /*para a linha ficar grudada no inicio */ 
+    padding: 5px;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0'; /* Codigo da emogipedia. Utilize o\00A0 depois*/
+    list-style-position: inside; /* para que as bolinhas fiquem dentro do quadrado*/
+    columns: 2; /*dividir as colunas em dois */ 
+
+}
