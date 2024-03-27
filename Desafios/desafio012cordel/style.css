@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px; /* usado para deixar tudo grudadinho para configurar melhor depois*/
+    padding: 0px;
+}
+
+html,body {
+    min-height: 100vh;
+    background-color: gray;
+
+}
+
+header { 
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding: 50px;/*deixar um caixa maior na parte do titulo */
+}
