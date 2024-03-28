@@ -11,6 +11,20 @@
 
         table {
             width: 500px;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em; /*tamanho*/
+            font-weight: bold; /*negrito */
+            padding: 10px; /*borda entre as letras*/
+            background-color: lightgray; 
+        }
+
+        thead > tr > th { /*configuração para que o titulo da tabela role para baixo quando a tabela for formuto extensa. Isso é chamado de cabeçalho fixo*/
+            position: sticky;
+            top: 0;
+            background-color: gray;
         }
 
         td, th {
@@ -26,12 +40,17 @@
         td.num{
             text-align: right;
         }
+
+        tbody > tr:nth-child(2n){ /*nth-child significa que a tebela vai ter um efeito zebrado, ou seja, um cinza e depois um branco. O 2n é possivel configurar e aumentar o intervalo */
+            background-color: rgba(128, 128, 128, 0.342);
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas Grandes</h1>
     <!--
         Anatomia para tabelas grandes 
+    CAPTION= Legenda da tabela
     THEAD = CABEÇALHO
         TR,TD,TH
     TBODY = CORPO
@@ -42,10 +61,12 @@
 
 
     <table>
+        <caption>População das Unidades Federais</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th> 
+                <!--scope="col" significa que o dado vai aparecer na mesma coluna -->
+                <th scope="col" style="width: 100px;">População</th> <!--scope="col" significa que o dado vai aparecer na mesma coluna --> <!--o style foi usado para diminuir o tamanho da linha da população-->
             </tr>
         </thead>
         <tbody>
@@ -91,8 +112,8 @@
         </tbody>
 
         <tfoot>
-            <th>Total de Habilitantes</th>
-            <td class="num">122 312 232</td>
+            <th scope="row">Total de Habilitantes</th> <!--scope="row" significa que o dado vai aparecer na mesma linha -->
+            <td class="num"><strong>122 312 232</strong></td> <!--strong foi usado para deixar a letra em negrito e dizer que é um dado importante-->
         </tfoot>
     </table>
 </body>
