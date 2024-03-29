@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela--</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption{
+            font-size: 1.5em;
+            padding: 10px;
+
+        }
+
+        table { 
+            text-align: center;
+        }
+
+        th,td {
+            padding: 10px;
+            width: 100px;
+            border: 1px solid black;
+        }
+
+        col.cnome { /*configuração do colgroup*/
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup> <!--usado para que uma configuração seja feita para uma coluna especifica-->
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Tabela Exemplo</caption>
+        <thead>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Mariana Rosa</td>
+                <td>F</td>
+                <td>23</td>
+                <td>Programadora</td>
+            </tr>
+
+            <tr>
+                <td>Matheus</td>
+                <td>H</td>
+                <td>23</td>
+                <td>Motoboy</td>
+            </tr>
+
+            <tr>
+                <td>Julia</td>
+                <td>F</td>
+                <td>23</td>
+                <td>Vendedora</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
