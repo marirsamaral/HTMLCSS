@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe{
+            border: 1px solid black;
+            width: 95vw;
+            height: 300px;
+        }
+
+    </style>
+    <title>Uso de Iframe</title>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae dignissimos pariatur consectetur? Debitis cum id sint. Nihil qui velit rerum reiciendis, ullam magni sapiente fuga, similique labore dolor ab est.</p>
+
+    <ul>
+        <li><a href="pag001.html" target="frame">Primeira Pagina</a></li> <!--frame é usado para que a conexão seja feita com o iframe. Frame é um nome criado,ou seja, pode ser outros nomes-->
+        <li><a href="pag002.html" target="frame">Segunda Pagina</a></li>
+        <li><a href="pag003.html" target="frame">Terceira Pagina</a></li>
+    </ul>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, illo! Nisi non itaque qui ea doloremque, architecto laboriosam ex ad quam perspiciatis, porro, eos neque obcaecati commodi facilis. Molestias, voluptates?</p>
+
+    <iframe  name="frame" srcdoc="<h1>Escolha uma das opções a cima</h1><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque pariatur exercitationem dolorum eligendi. Earum, quisquam. Alias itaque vitae quae repellat molestiae, beatae dolores veniam dicta soluta odio esse rem quaerat?</p>"></iframe> <!--name é usado para determinar o que vai aparecer no iframe, como se fosse uma conexão-->
+    <!--srdoc é usado para que possa ser escrito ou colocado uma mensagem dentro do iframe-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam dignissimos placeat modi nihil numquam eius sint perspiciatis, nulla natus consequuntur suscipit impedit beatae voluptas eveniet! Mollitia expedita possimus sunt?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sint in, facilis sapiente sunt error omnis esse velit, eveniet et provident consectetur rem! Illo magni maiores est, facilis culpa neque.</p>
+</body>
+</html>
