@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulario</title>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iuss">Usuario</label>
+            <input type="text" name="Usuario" id="iusu" required minlength="10" maxlength="30" size="12" placeholder="Nome do usuario">
+        </p>
+
+        <!--
+            required = para que o campo seja obrigadtorio o preenchimento 
+            minlenght / maxlenght = quantidade minima e maxima de digitos que o campo vai permitir 
+            size = tamanho do campo 
+            placeholder = sugestão que vai aparecer no campo
+
+            label é importante usar para que seja feito o vinculo do campo com o nome do campo 
+
+            input serve para dar significa ao campo. Dizer se é um campo de senha, texto, telefone...
+        -->
+        
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="8" placeholder="min 8 digitos">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
