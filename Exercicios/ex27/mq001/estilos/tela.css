@@ -1,0 +1,56 @@
+@charset "URF-8";
+
+/* Estilo para telas*/
+
+* {
+    margin: 0px;
+    padding: 0px;;
+
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+header {
+    background-color: gray;
+}
+
+header > h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+menu {
+    padding-left: 50px;
+    
+}
+
+menu ul { /*configurações para os itens do menu*/
+    list-style-type: none; /*para não aparecer a bolinha da lista*/
+    background-color: gray;
+}
+
+menu li {/*configurações da lista principal*/
+    background-color: darkgray;
+    color: white;
+    display: inline-block; /*para ficar um do lado do outro*/
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article > h2{
+    padding: 13px;
+    text-align: center;
+}
+   
+
+article{
+    width: 600px;
+    margin: auto;
+    display: block; /*para que seja possivel usar o margin auto e o texto ficar centralizado*/
+    text-align: justify;  
+}
+
