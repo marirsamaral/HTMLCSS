@@ -2,3 +2,70 @@
 
 /*Todas as demais midias*/
 
+/*Como já foi feita a versão mobile, aqui não precisa fazer as especificações para a versão de celular*/
+
+@media print { /*Versão para impressão*/
+    
+    * {
+        font-family: 'Courier New', Courier, monospace; /*fonte usada em impressão*/
+        font-size: 1em;
+    }
+
+    main {
+        width: 95vw;
+        border: 2px solid black; /*borda*/
+    } 
+
+    main::after {
+        content: "Essa impressão foi feita do site www.teste.com.br";
+        text-decoration: overline; /*para fazer uma linha em cima do texto*/
+        
+    }
+
+    main,h1 {
+        text-shadow: none; /*para tirar a sombra que foi colocada no CSS geral */
+        color: black;
+    }
+
+    img#phone {display: none;} 
+    img#print {display: block;}/*none = para esconder as imagens*/
+    img#tablet {display: none;}
+    img#tv {display: none;}
+    img#pc {display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /*Tablet*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone {display: none;} 
+    img#print {display: none;}/*none = para esconder as imagens*/
+    img#tablet {display: block;}
+    img#tv {display: none;}
+    img#pc {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {/*Desktop*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone {display: none;} 
+    img#print {display: none;}/*none = para esconder as imagens*/
+    img#tablet {display: none;}
+    img#tv {display: none;}
+    img#pc {display: block;}
+}
+
+@media screen and (min-width: 1200px) { /*Grandes Telas*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#phone {display: none;} 
+    img#print {display: none;}/*none = para esconder as imagens*/
+    img#tablet {display: none;}
+    img#tv {display: block;}
+    img#pc {display: none;}
+}
