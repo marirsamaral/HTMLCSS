@@ -87,7 +87,7 @@ section > h2 {
     padding: 5px;
 }
 
-ul {
+ul > li {
     text-decoration: none;
     display: block;
 }
@@ -98,29 +98,50 @@ li:nth-child(4) {
     width:50%;
 }
 
+.felicidade {
+    font-size: 20px;
+    width: 400px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
 
 section > input { /*Botão Curso de Reciclagem*/
     font-size: 1.5em;
     background-color:rgb(50, 97, 125) ;
     border-radius: 5px;
-    padding: 5px;
+    padding: 20px;
     color: white;
     margin: 10px;
     box-shadow: 2px 2px 10px;
     border: none;
+    margin: auto;
+    display: block;
 }
 
+
+.txtvisita { /*Acho que já deu para entender...*/
+    font-size: 20px;
+    width: 600px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+}
 
 
 div > input { /*Botão Quero a visita de...*/
     font-size: 1.5em;
     background-color:rgb(50, 97, 125) ;
     border-radius: 5px;
-    padding: 5px;
+    padding: 15px;
     color: white;
-    margin: 10px;
     box-shadow: 2px 2px 10px;
     border: none;
+    display: block;
+    margin: auto;
 }
 
 
@@ -134,16 +155,10 @@ fieldset > p { /*Institucional*/
 fieldset > ul { 
     text-decoration: none;
     color: white;
-    list-style: none;
+
 }
 
 
-.direita {
-    padding-left: 200px;
-    padding-top:20px;
-    text-align: left;
-    text-decoration: none;
-}
 
 
 
