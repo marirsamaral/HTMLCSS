@@ -6,9 +6,13 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    font-family: "Open Sans", sans-serif;
 }
 
-
+::-webkit-scrollbar { /*Tirar a barra de rolagem da pagina*/
+    width: 0px;
+    height: 0px;
+}
 
 header{ /*Primeiro texto do site*/
     background-color:rgb(9, 35, 50);
@@ -26,21 +30,21 @@ header > a { /*Primeiro texto do site*/
 img.logo {
     display: block;
     width: 170px;
-
+    transform: translate(-90%, -20%);
     margin-left: 2px;
     margin-inline: 12em;
     background-size: 120px 120px;
-    
-    
 }
+
+
+
 nav {
     background-color: white;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.329);
     display: flex;
-    padding-top: 30px;
+    padding: 10px;
     margin-bottom: 10px;
-
-   
+    padding-top: 30px;
 }
 
 nav > a { /*Menu de navegação*/
@@ -48,33 +52,59 @@ nav > a { /*Menu de navegação*/
     color: rgb(9, 35, 50);
     margin-inline: 1.5em;
     background-color: white;
+    transform: translate(-20%, +10%);
+    width: 170px;
+}
+
+.curso {
+    width: 150px;
+    font-size: 15px;
+    color: rgb(9, 35, 50);
+    font-weight: bolder;
+   
 }
 
 nav > input { /* Botão Acessar Plataforma */
-    font-size: 1.1em;
+    font-size: 14px;
     background-color:rgb(250, 103, 53) ;
     border-radius: 5px;
-    padding: 5px;
-    color: white;
-    margin: 10px;
-    margin-top: -10px;
-    border: none;
-}
-
-section.inicio { /*Primeira Section*/
-    width: 500px;
-    margin: auto;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-section > h2 { 
-    color:rgb(37, 50, 75) ;
-    text-align: center;
-    font-size: 2.5em;
     padding: 10px;
-    width: 470px;
+    color: white;
+    border: none;
+    height: 50px;
+    font-weight: bolder;
+
+}
+
+img.banner1{ /*Imagem 1 do carrosel*/
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+img.banner2{ /*Imagem 2 do carrosel*/
+    width: 100%;
+    height: 100%;
+}
+
+img.banner3 { /*Imagem 3 do carrosel*/
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+section > h2 { /*A Habilite-se tem o curso e a prova que você precisa*/
+    color:rgb(37, 50, 75) ;
+    font-size: 2.8em;
+    padding: 10px;
+    width: 600px;
     margin: auto;
+    font-weight: bolder;
 }
 
 .sub { /*Cursos Homologados / Provas*/
@@ -89,39 +119,50 @@ section > h2 {
 
 ul > li {
     text-decoration: none;
-    display: block;
+    
 }
 
-li:nth-child(4) {
-    clear:both;
-    float:left;
-    width:50%;
-}
+
+
+
+
 
 section.azul {
     background-color: rgb(10, 37, 53);
     height: 500px;
+    padding: 40px;
+}
+
+img.imgfelicidade {
+    height: 430px;
+    width: 500px;
+    transform: translate(+10%, -70%);
+    position: relative;
 }
 
 .titulofelicidade {
-    
+    transform: translate(+40%, +10%);
     background-color: rgb(10, 37, 53);
     color: white;
+    font-size: 55px;
+    width: 430px;
 }
 
 .felicidade { /*CNh suspensa? ...*/
-    font-size: 20px;
+    font-size: 15px;
     width: 400px;
     display: block;
     margin: auto;
     padding: 20px;
     background-color: rgb(10, 37, 53);
-    color: white;
+    color: rgba(255, 255, 255, 0.616);
+    transform: translate(+40%, +30%);
 }
 
 
+
 section > input { /*Botão Curso de Reciclagem*/
-    font-size: 1.5em;
+    font-size: 15px;
     background-color:rgb(50, 97, 125) ;
     border-radius: 5px;
     padding: 20px;
@@ -130,30 +171,67 @@ section > input { /*Botão Curso de Reciclagem*/
     border: none;
     margin: auto;
     display: block;
+    transform: translate(+60%, -650%);
+    width: 300px;
+    
 }
 
+#atendimento{
+    height: 900px;
+}
+.txtvanta{ /*Titulo: Atendimento/Resposta Rapida...*/
+    color: rgb(250, 103, 53);
+    font-size: 25px
+}
+
+.txtate{ /*Texto atendimento*/
+    width:380px;
+    padding: 20px;
+    transform: translate(+40%, +1%)
+}
+
+.txtrr { /*texto Resposta Rapida*/
+    width:380px;
+    padding: 20px;
+    transform: translate(+170%, -106%);
+}
+
+.txtmi { /*Texto Migração*/
+    width:380px;
+    padding: 20px;
+    transform: translate(+40%, -100%)
+}
+
+.txteco { /*Texto Economia*/
+    width:380px;
+    padding: 20px;
+    transform: translate(+170%, -200%);
+}
 
 .txtvisita { /*Acho que já deu para entender...*/
     font-size: 20px;
-    width: 600px;
+    width: 610px;
     display: block;
     margin: auto;
     padding: 20px;
     text-align: center;
     font-size: 16px;
+    color: rgb(10, 37, 53);
 }
 
 
 div > input { /*Botão Quero a visita de...*/
-    font-size: 1.5em;
+    font-size: 15px;
     background-color:rgb(50, 97, 125) ;
     border-radius: 5px;
-    padding: 15px;
+    padding: 20px;
     color: white;
-    box-shadow: 2px 2px 10px;
     border: none;
     display: block;
     margin: auto;
+    width: 320px;
+    font-weight: bolder;
+    margin-bottom: 50px;
 }
 
 fieldset {
@@ -170,12 +248,6 @@ fieldset > p { /*Institucional*/
     color: white;
     
 }
-
-.teste { 
-    color: white;
-
-}
-
 
 footer > p {  /*Rodapé*/
     background-color: rgb(37, 50, 75);
