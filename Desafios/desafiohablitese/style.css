@@ -97,31 +97,68 @@ img.banner3 { /*Imagem 3 do carrosel*/
 
 
 
-
+.homologados { /*Config. geral Homologados*/
+    padding: 40px;
+    height: 420px;
+    background-color: rgb(244,250,254);
+    
+}
 section > h2 { /*A Habilite-se tem o curso e a prova que você precisa*/
     color:rgb(37, 50, 75) ;
-    font-size: 2.8em;
-    padding: 10px;
-    width: 600px;
+    font-size: 2em;
+    padding: 20px;
+    width: 450px;
+    height: 150px;
     margin: auto;
     font-weight: bolder;
 }
 
-.sub { /*Cursos Homologados / Provas*/
-    font-size: 1.3em;
+.cursos { /*Cursos Homologados*/
+    font-size: 1.0em;
+    display: block;
+    transform: translate(+20%, -10%);
+    
+}
+
+.ead { /*Texto do Ead*/
+    display: block;
+    font-size: 12px;
+    transform: translate(+21%, +10%);
+}
+
+.pv { /*Texto de Provas*/
+    color: black;
+    display: block;
+    font-size: 13px;
+    transform: translate(+60%, -120%);
+}
+
+.primeira {
+    display: block;
+    font-size: 13px;
+    transform: translate(+21%, -500%);
+}
+
+.provas { /*Provas*/
+    padding: 10px;
+    transform: translate(+60%, -250%);
+    display: block;
 }
 
 .principal { /* EAD / Presencial, Remoto...*/
     color: rgb(250, 103, 53);
-    font-size: 1.2em;
-    padding: 5px;
+    display: block;
+    font-size: 15px;
+    padding: 2px;
+    transform: translate(+20%, -10%);
 }
 
-ul > li {
-    text-decoration: none;
-    
+.principal2 {
+    color: rgb(250, 103, 53);
+    display: block;
+    font-size: 15px;
+    transform: translate(+20%, -500%);
 }
-
 
 
 
@@ -129,55 +166,59 @@ ul > li {
 
 section.azul {
     background-color: rgb(10, 37, 53);
-    height: 500px;
+    height: 400px;
     padding: 40px;
 }
 
 img.imgfelicidade {
-    height: 430px;
-    width: 500px;
-    transform: translate(+10%, -70%);
+    height: 330px;
+    width: 400px;
+    transform: translate(+40%, -70%);
     position: relative;
 }
 
 .titulofelicidade {
-    transform: translate(+40%, +10%);
+    transform: translate(+40%, +20%);
     background-color: rgb(10, 37, 53);
     color: white;
-    font-size: 55px;
-    width: 430px;
+    font-size: 2em;
+    width: 300px;
 }
 
 .felicidade { /*CNh suspensa? ...*/
-    font-size: 15px;
-    width: 400px;
+    font-size: 13px;
+    width: 350px;
     display: block;
     margin: auto;
     padding: 20px;
     background-color: rgb(10, 37, 53);
     color: rgba(255, 255, 255, 0.616);
-    transform: translate(+40%, +30%);
+    transform: translate(+40%, +10%);
 }
 
 
 
 section > input { /*Botão Curso de Reciclagem*/
-    font-size: 15px;
+    font-size: 12px;
     background-color:rgb(50, 97, 125) ;
-    border-radius: 5px;
-    padding: 20px;
+    border-radius: 2px;
+    padding: 10px;
     color: white;
-    margin: 10px;
     border: none;
     margin: auto;
     display: block;
-    transform: translate(+60%, -650%);
-    width: 300px;
-    
+    transform: translate(+50%, -850%);
+    width: 220px;
+    font-weight: bolder;
 }
 
 #atendimento{
     height: 900px;
+}
+.ttvanta{ /*Vantagens de ser um parceiro Habilite-se*/ 
+    transform: translate(+2%, +1%);
+    font-size: 2.5em;
+    font-weight: bolder;
 }
 .txtvanta{ /*Titulo: Atendimento/Resposta Rapida...*/
     color: rgb(250, 103, 53);
