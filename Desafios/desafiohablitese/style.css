@@ -258,6 +258,7 @@ section > input { /*Botão Curso de Reciclagem*/
     text-align: center;
     font-size: 16px;
     color: rgb(10, 37, 53);
+    background-color: white;
 }
 
 
@@ -275,23 +276,62 @@ div > input { /*Botão Quero a visita de...*/
     margin-bottom: 50px;
 }
 
-fieldset {
-    background-color:rgb(37, 50, 75);
+.plf{/*Config. geral Os alunos...*/
+    color: white;
+    width: 700px;
+    font-size: 40px;
+    
+}
+.plataforma { /*Os aluno na plataforma Habilite-se estão em boa mãos*/
+    background-color: rgb(10, 37, 53) ;
+    height: 600px;
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+section.institucional {
+    background-color:rgb(10, 37, 53) ;
     padding: 20px;
     color: white;
-    font-size: 10px;
+    font-size: 15px;
+    list-style: none;
+    text-decoration: none;
+    
     
 }
 
-fieldset > p { /*Institucional*/
-    background-color: rgb(37, 50, 75) ;
-    font-size: 1.5em;
+section.itt { /*Institucional*/
+    background-color: rgb(10, 37, 53) ;
+    font-size: 13px;
     color: white;
-    
+    margin-left: 30px;
+    font-weight: bolder;
+}
+
+ul.teste {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+div.parte1{
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.parte2 {
+
+}
+
+.parte3{
+
 }
 
 footer > p {  /*Rodapé*/
-    background-color: rgb(37, 50, 75);
+    background-color: rgb(10, 37, 53) ;
     padding: 5px;
     color: white;
     text-align: center;
