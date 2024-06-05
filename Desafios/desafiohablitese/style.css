@@ -289,49 +289,245 @@ div > input { /*Botão Quero a visita de...*/
     text-align: center;
 }
 
+/**.segundocarrosel {
+    width: 50px;
+    height: 200px;
+}**/
 
+/**.imgmaos {
+    width: 500px;
+    height: 500px;
+    -webkit-mask-image: linear-gradient(to top, transparent 5%, rgb(10, 37, 53) 100%);
+} **/
 
-section.institucional {
-    background-color:rgb(10, 37, 53) ;
-    padding: 20px;
+.ValeaPena { /*Config Geral*/
+    background-color: rgb(50,97,125);
+    height: 600px;
+}
+
+.ValeaPena > h2 {
     color: white;
+    width: 350px;
+    font-size: 40px;
+    padding: 30px;
+    transform: translate(+70%, +80%);
+}
+
+.ValeaPena > p {
+    color: rgba(255, 255, 255, 0.493);
+    width: 400px;
+    transform: translate(+198%, +280%);
     font-size: 15px;
-    list-style: none;
-    text-decoration: none;
-    
-    
+}
+
+.ValeaPena > input { /*Quero a visita de um consultor*/
+    transform: translate(+100%, +370%);
+    background-color: rgb(10, 37, 53);
+    font-size: 15px;
+    padding: 10px;
+    width: 270px;
+}
+
+.ValeaPena > img {
+    transform: translate(+10%, -50%);
+}
+
+fieldset.escolha1 { /*Config do campo 1 */
+    border-radius: 20px;
+    box-shadow: 0px 1px 7px black;
+    height: 380px;
+    width: 80%;
+    transform: translate(+10%, -7%);
+    border: none;
+}
+
+.esc {  /*Porque escolher a Habilite-se*/
+    font-size: 40px;
+    text-align: center;
+}
+
+.escolha1 > img { /*Imagem 1*/
+    height: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.escolha1 > strong { /*Feito para você*/
+    color: rgb(250, 103, 53);
+    font-size: 25px;
+    position: absolute;
+    top: 15%;
+    right: 32%;
+}
+
+.escolha1 > p { /*Texto 1 */
+    width: 40%;
+    position: absolute;
+    top: 27%;
+    right: 10%;
+    color: rgba(0, 0, 0, 0.628);
+    font-size: 15px;
+}
+
+fieldset.escolha2 { /*Config do campo 2 */
+    border-radius: 20px;
+    box-shadow: 0px 1px 3px rgb(0, 0, 0);
+    height: 380px;
+    width: 80%;
+    transform: translate(+10%, -7%);
+    border: none;
+}
+
+.escolha2 > strong { /* Equipe Profissional*/
+    color: rgb(250, 103, 53);
+    font-size: 25px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.escolha2 > img { /*Imagem 2*/
+    height: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    left: 52%; /*colocar a imagem a direita*/
+}
+.escolha2 > p { /*Texto 2 */
+    width: 40%;
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    color: rgba(0, 0, 0, 0.678);
+    font-size: 15px;
+}
+
+fieldset.escolha3 { /*Config do campo 3 */
+    border-radius: 20px;
+    box-shadow: 0px 1px 3px rgb(0, 0, 0);
+    height: 380px;
+    width: 80%;
+    transform: translate(+10%, -7%);
+    border: none;
+}
+
+.escolha3 > img { /*Imagem 3*/
+    height: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    right: 53%;
+}
+
+.escolha3 > strong { /*Entendemos você*/
+    color: rgb(250, 103, 53);
+    font-size: 25px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+.escolha3 > p { /*Texto 3 */
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    color: rgba(0, 0, 0, 0.678);
+    font-size: 15px;
+}
+
+fieldset.escolha4 { /*Config do campo 4 */
+    border-radius: 20px;
+    box-shadow: 0px 1px 3px rgb(0, 0, 0);
+    height: 380px;
+    width: 80%;
+    transform: translate(+10%, -7%);
+    border: none;
+}
+
+.escolha4 > img { /*Imagem 4*/ 
+    height: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    left: 52%;
+}
+
+.escolha4 > strong {
+    color: rgb(250, 103, 53);
+    font-size: 25px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.escolha4 > p { /*Texto 4*/
+    width: 40%;
+    position: absolute;
+    left: 10%;
+    bottom: 35%;
+    color: rgba(0, 0, 0, 0.678);
+    font-size: 15px;
+}
+
+
+
+
+section.institucional { /*Config Geral*/
+    background-color:rgb(10, 37, 53) ;
+    font-size: 15px;
+    padding: 100px;
+    height: 180px;
+    width: 100%;
 }
 
 section.itt { /*Institucional*/
     background-color: rgb(10, 37, 53) ;
     font-size: 13px;
     color: white;
-    margin-left: 30px;
     font-weight: bolder;
 }
 
-ul.teste {
-    list-style: none;
-    text-decoration: none;
+.itt {
+    transform: translate(+2%, -10%);
+    font-weight: bolder;
+    color: white;
 }
 
-
-div.parte1{
+ul.teste { /*1° parte do Institucional*/
+    list-style: none;
+    text-decoration: none;
+    font-size: 12px;
     padding: 10px;
+    line-height: 30px; /*Altura entre as linhas*/
+    transform: translate(+2%, -10%);
+}
+
+
+ul.teste2 {
     list-style: none;
     text-decoration: none;
+    font-size: 12px;
+    line-height: 30px;
+    transform: translate(+20%, -160%);
+
 }
 
-.parte2 {
-
+ul.teste3{
+    list-style: none;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 30px;
+    transform: translate(+35%, -150%);
+    color: rgba(255, 255, 255, 0.507);
 }
 
-.parte3{
-
+footer {
+    height: 10px;
+    width: 100%;
 }
 
 footer > p {  /*Rodapé*/
-    background-color: rgb(10, 37, 53) ;
+    background-color: rgb(8, 32, 46) ;
     padding: 5px;
     color: white;
     text-align: center;
