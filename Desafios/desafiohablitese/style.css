@@ -469,6 +469,170 @@ fieldset.escolha4 { /*Config do campo 4 */
     font-size: 15px;
 }
 
+section.vamos { /*Config Geral Vamos conversar? */
+    height: 600px;
+    background-color: rgb(50, 97, 125);
+}
+
+.vamos > h2 { /*Vamos Conversar*/
+    color: white;
+    font-size: 40px;
+    position: relative;
+    right: 35%;
+    top: 30%;
+    width: 20px;
+}
+
+.vamos > p {
+    color: white;
+    position: relative;
+    left: 14%;
+    top: 25%;
+    width: 250px;
+}
+
+fieldset.conversar1 {
+    width:30%;
+    height: 12%;
+    padding: 30px;
+    font-size: 14px;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    bottom: 28%;
+    background-color: white;
+    border: none;
+}
+
+.conversar1 > p {
+    color: rgba(0, 0, 0, 0.397);
+}
+
+fieldset > a {
+    color:rgb(8, 32, 46);
+    position: absolute;
+    left: 75%;
+    top: 40%;
+    font-weight: bolder;
+}
+
+fieldset.conversar2 {
+    width:30%;
+    height: 12%;
+    padding: 30px;
+    font-size: 14px;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    bottom: 20%;
+    background-color: white;
+    border: none;
+}
+
+.conversar2 > p {
+    color: rgba(0, 0, 0, 0.397);
+}
+
+fieldset.conversar3 {
+    width:30%;
+    height: 14%;
+    padding: 30px;
+    font-size: 14px;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    bottom: 15%;
+    background-color: white;
+    border: none;
+}
+
+.blog { /*Config Geral Blog*/
+    height: 600px;
+    background-color: rgb(238, 244, 248);
+}
+.blog > h2 { /*Blog*/
+    font-size: 45px;
+    position: relative;
+    right: 20%;
+    top: 10%;
+}
+.espaço { /*Texto: Esse é o espaço que...*/
+    width: 20%;
+    font-size: 15px;
+    position: relative;
+    left: 23%;
+    bottom: 18%;
+}
+
+.blog > img {/*Imagem 1*/
+    border-radius: 20px;
+    position: relative;
+    bottom: 10%;
+    left: 12%;
+}
+
+.dt1 {
+    color: rgba(0, 0, 0, 0.411);
+    font-size: 13px;
+    position: relative;
+    left: 12%;
+    top: -8%;
+}
+
+.limite { /*texto novo limite*/
+    font-weight: bolder;
+    font-size: 18px;
+    width: 24%;
+    position: relative;
+    left: 12%;
+    bottom: 7%;
+}
+
+img.pontuacao  { 
+    position: relative;
+    top: -57%;
+    left: 40%;
+}
+
+.dt2 {
+    color: rgba(0, 0, 0, 0.411);
+    font-size: 13px;
+    position: relative;
+    left: 40%;
+    top: -55%;
+}
+
+.pontuacao1 { /*Texto O direito...*/
+    font-weight: bolder;
+    font-size: 18px;
+    width: 24%;
+    position: relative;
+    left: 40%;
+    top: -55%;
+}
+
+img.reci {
+    position: relative;
+    top: -101%;
+    left: 68%;
+}
+
+.reci1 { /*Texto Curso d Reciclagem*/
+    font-weight: bolder;
+    font-size: 18px;
+    width: 24%;
+    position: relative;
+    left: 68%;
+    top: -99%;
+}
+
+.dt3 {
+    color: rgba(0, 0, 0, 0.411);
+    font-size: 13px;
+    position: relative;
+    left: 68%;
+    top: -99%;
+}
 
 
 
@@ -503,7 +667,7 @@ ul.teste { /*1° parte do Institucional*/
 }
 
 
-ul.teste2 {
+ul.teste2 {/*2° parte  do Institucional*/
     list-style: none;
     text-decoration: none;
     font-size: 12px;
@@ -512,7 +676,7 @@ ul.teste2 {
 
 }
 
-ul.teste3{
+ul.teste3{ /**/ 
     list-style: none;
     text-decoration: none;
     font-size: 12px;
