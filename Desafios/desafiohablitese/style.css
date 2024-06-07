@@ -76,20 +76,36 @@ nav > input { /* Botão Acessar Plataforma */
 
 }
 
+.carrosel1 {
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #ddd;
+}
+
+.carrosel {
+    display: flex;
+    
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+}
+
 img.banner1{ /*Imagem 1 do carrosel*/
     display: block;
-    width: 100%;
-    height: 100%;
+    margin-left: 50px;
+   
 }
 
 img.banner2{ /*Imagem 2 do carrosel*/
-    width: 100%;
-    height: 100%;
+    
 }
 
 img.banner3 { /*Imagem 3 do carrosel*/
-    width: 100%;
-    height: 100%;
+    
 }
 
 
@@ -213,7 +229,7 @@ section > input { /*Botão Curso de Reciclagem*/
 }
 
 #atendimento{
-    height: 900px;
+    height: 1000px;
 }
 .ttvanta{ /*Vantagens de ser um parceiro Habilite-se*/ 
     transform: translate(+2%, +1%);
@@ -222,31 +238,42 @@ section > input { /*Botão Curso de Reciclagem*/
 }
 .txtvanta{ /*Titulo: Atendimento/Resposta Rapida...*/
     color: rgb(250, 103, 53);
-    font-size: 25px
+    font-size: 25px;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .txtate{ /*Texto atendimento*/
-    width:380px;
+    width:330px;
     padding: 20px;
-    transform: translate(+40%, +1%)
+    transform: translate(+90%, -2%);
+    font-size: 13px;
 }
 
 .txtrr { /*texto Resposta Rapida*/
-    width:380px;
+    width:330px;
     padding: 20px;
-    transform: translate(+170%, -106%);
+    transform: translate(+210%, -106%);
+    font-size: 13px;
 }
 
 .txtmi { /*Texto Migração*/
-    width:380px;
+    width:330px;
     padding: 20px;
-    transform: translate(+40%, -100%)
+    transform: translate(+90%, -100%);
+    font-size: 13px;
 }
 
 .txteco { /*Texto Economia*/
-    width:380px;
+    width:330px;
     padding: 20px;
-    transform: translate(+170%, -200%);
+    transform: translate(+210%, -212%);
+    font-size: 13px;
+}
+
+.visita {
+    background-color: rgb(244, 250, 254) ;
+    padding: 10px;
 }
 
 .txtvisita { /*Acho que já deu para entender...*/
@@ -258,7 +285,7 @@ section > input { /*Botão Curso de Reciclagem*/
     text-align: center;
     font-size: 16px;
     color: rgb(10, 37, 53);
-    background-color: white;
+
 }
 
 
@@ -331,6 +358,49 @@ div > input { /*Botão Quero a visita de...*/
 .ValeaPena > img {
     transform: translate(+10%, -50%);
 }
+
+section.notas1 { /*Config. Geral Olha só o que */
+    background-color:rgb(244, 250, 254) ;
+    height: 900px;
+}
+
+section.notas1 > h2 { /*Olha só o que eles estão falando*/
+    font-size: 45px;
+    text-align: center;
+    padding: 50px;
+}
+
+fieldset.notas { /*Avaliação da Deborah*/
+    height: 500px;
+    width: 320px;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 13px;
+    border: 2px solid rgba(0, 0, 0, 0.363);
+    display: block;
+    transform: translate(20%, -10%);
+}
+
+fieldset.notas2 { /*Avaliação da Joyce*/
+    height: 500px;
+    width: 320px;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 13px;
+    border: 2px solid rgba(0, 0, 0, 0.363);
+    transform: translate(125%, -110%);
+}
+
+fieldset.notas3 { /*Avaliação da Daiane*/
+    height: 500px;
+    width: 320px;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 13px;
+    border: 2px solid rgba(0, 0, 0, 0.363);
+    transform: translate(230%, -210%);
+}
+
 
 fieldset.escolha1 { /*Config do campo 1 */
     border-radius: 20px;
@@ -508,13 +578,18 @@ fieldset.conversar1 {
     color: rgba(0, 0, 0, 0.397);
 }
 
-fieldset > a {
+fieldset > a { /* Saiba Mais*/
     color:rgb(8, 32, 46);
     position: absolute;
     left: 75%;
     top: 40%;
     font-weight: bolder;
 }
+
+section.institucional > div > ul > li > a { /*Config color das letras do rodapé. Habilite-se/ cursos e provas..*/
+    color: rgba(255, 255, 255, 0.507);
+    
+} 
 
 fieldset.conversar2 {
     width:30%;
@@ -566,12 +641,10 @@ fieldset.conversar3 {
 
 .blog > img {/*Imagem 1*/
     border-radius: 20px;
-    position: relative;
-    bottom: 10%;
-    left: 12%;
+    transform: translate(+50%, -30%);
 }
 
-.dt1 {
+.dt1 { /*Data 12 de abril de 2023*/
     color: rgba(0, 0, 0, 0.411);
     font-size: 13px;
     position: relative;
@@ -588,18 +661,27 @@ fieldset.conversar3 {
     bottom: 7%;
 }
 
-img.pontuacao  { 
-    position: relative;
-    top: -57%;
-    left: 40%;
+.blog > input  { /* Leia Mais */
+    color: rgb(250, 103, 53);
+    background-color: white;
+    border-radius: 10px;
+    border-color: rgb(250, 103, 53);
+    transform: translate(+10%, -7%);
+    position: absolute;
 }
 
-.dt2 {
+img.pontuacao  { /*2° Imagem */
+    transform: translate(+165%, -198%);
+}
+
+
+
+.dt2 { /*Data 12 de abril de 2023*/
     color: rgba(0, 0, 0, 0.411);
     font-size: 13px;
     position: relative;
     left: 40%;
-    top: -55%;
+    top: -62%;
 }
 
 .pontuacao1 { /*Texto O direito...*/
@@ -608,13 +690,11 @@ img.pontuacao  {
     width: 24%;
     position: relative;
     left: 40%;
-    top: -55%;
+    top: -61%;
 }
 
-img.reci {
-    position: relative;
-    top: -101%;
-    left: 68%;
+img.reci { /*3° Imagem*/
+    transform: translate(+275%, -339%);
 }
 
 .reci1 { /*Texto Curso d Reciclagem*/
@@ -623,25 +703,23 @@ img.reci {
     width: 24%;
     position: relative;
     left: 68%;
-    top: -99%;
+    top: -105.5%;
 }
 
-.dt3 {
+.dt3 { /*Data 12 de abril de 2023*/
     color: rgba(0, 0, 0, 0.411);
     font-size: 13px;
     position: relative;
     left: 68%;
-    top: -99%;
+    top: -106.5%;
 }
+
 
 
 
 section.institucional { /*Config Geral*/
     background-color:rgb(10, 37, 53) ;
-    font-size: 15px;
-    padding: 100px;
-    height: 180px;
-    width: 100%;
+    font-size: 15px;    
 }
 
 section.itt { /*Institucional*/
@@ -685,10 +763,7 @@ ul.teste3{ /**/
     color: rgba(255, 255, 255, 0.507);
 }
 
-footer {
-    height: 10px;
-    width: 100%;
-}
+
 
 footer > p {  /*Rodapé*/
     background-color: rgb(8, 32, 46) ;
